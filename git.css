@@ -21,19 +21,19 @@ body{
 }
 
 .head{
-    grid-area: 1/1/2/4;
+   
     border: 1px red solid;
     position: relative;
 }
 .img1 img{
-    max-height: 345px;
-    max-width: 1260px;
+    height:45%;
+    width: 100%;
     opacity: 0.95;
     padding: 2px;
 
 }
 .img2 img{
-    max-width: 150px;
+    width: 150px;
     opacity: 0.75;
     position: absolute;
     bottom:1%;
@@ -64,11 +64,11 @@ body{
 .column.left{
 
   border: 1px green solid;
-  width: 25%;
+  width: 20%;
 }
 .column.main{
     border: 1px crimson solid;
-    width: 50%;
+    width: 55%;
 }
 .column.right{
     width: 25%;
@@ -91,6 +91,8 @@ border-bottom: 3px crimson solid;
 }
 
 .left li{
+    width: 200px;
+    margin: auto;
     background: purple;
     margin-bottom: 2px;
     padding: 5px 0 5px 0;
