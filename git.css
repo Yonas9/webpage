@@ -1,14 +1,23 @@
-body{
+*{
     box-sizing: border-box;
+}
+
+body{
+   
     background:rgb(238, 228, 189);
     margin: 0;
     padding: 0;
 }
 
-.container{
+.row:after{
+    content: "";
     display: grid;
-    grid-column: auto auto auto ;
-    grid-row: auto auto auto auto;
+    clear: both;
+    
+}
+.column{
+    float: left;
+    
 }
 
 .head{
@@ -32,7 +41,6 @@ body{
     border-radius: 50%;
 }
 .nav{
-    grid-area: 2/1/3/4;
     border: 1px blue solid;
     display: flex;
     flex-direction: row;
@@ -53,20 +61,21 @@ body{
     text-align: center;
     padding: 5px;
 }
-.left{
-  grid-area: 3/1/4/2;
+.column.left{
+
   border: 1px green solid;
+  width: 25%;
 }
-.main{
-    grid-area: 3/2/4/3;
+.column.main{
     border: 1px crimson solid;
+    width: 50%;
 }
-.right{
-    grid-area: 3/3/4/4;
+.column.right{
+    width: 25%;
     border: 1px brown solid;
 }
 .footer{
-grid-area: 4/1/5/4;
+
 border: 1px black solid;
 }
 
@@ -79,4 +88,17 @@ border: 1px black solid;
 
 .nav a:hover {
 border-bottom: 3px crimson solid;
+}
+
+.left li{
+    background: purple;
+    margin-bottom: 2px;
+    padding: 5px 0 5px 0;
+    list-style: none;
+    text-align: center;
+
+}
+.left a{
+    text-decoration: none;
+    color: white;
 }
