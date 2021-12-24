@@ -1,2 +1,2 @@
 #Notice
-gitg
+leaning git and git hub
